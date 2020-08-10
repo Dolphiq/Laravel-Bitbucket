@@ -38,6 +38,8 @@ class AuthenticatorFactory
                 return new Authenticator\JwtAuthenticator();
             case 'oauth':
                 return new Authenticator\OauthAuthenticator();
+            case 'oauthsecret':
+                return new Authenticator\OauthSecretAuthenticator();
             case 'password':
                 return new Authenticator\PasswordAuthenticator();
             case 'private':
